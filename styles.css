@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.content-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.header {
+    background-color: whitesmoke;
+}
+
+.main-content {
+    background-color: grey;
+}
+
+.sideboard-container {
+    background-color: rgb(35, 190, 246);
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 2fr 8fr;
+}
+
+h1 {
+    padding: 1rem 2rem 2rem 2rem;
+    align-self: center;
+    color: white;
+}
+
+.nav-1,
+.nav-2 {
+    color: white;
+    list-style: none;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    height: 2rem;
+}
