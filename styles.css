@@ -4,7 +4,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .content-container {
@@ -18,14 +18,14 @@
 }
 
 .main-content {
-    background-color: grey;
+    background-color: rgb(230, 230, 230);
 }
 
 .sideboard-container {
-    background-color: rgb(35, 190, 246);
+    background-color: rgb(18, 137, 181);
     display: grid;
-    height: 100vh;
     grid-template-rows: 1fr 2fr 8fr;
+    height: 100vh;
 }
 
 h1 {
@@ -45,4 +45,182 @@ h1 {
 
 .nav-links {
     height: 2rem;
+}
+
+/* header search bar */
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 0px 5px 2px lightgrey;
+    margin-bottom: 5px;
+}
+
+.header-row-1 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 8fr 3fr ;
+    padding-right: 3rem;
+    padding-top: 2rem;
+}
+
+#magnify-glass {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+#username-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+#search {
+    background-color: rgb(230, 230, 230);
+    width: 80%;
+    border: none;
+    border-radius: 1rem;
+    height: 1.5rem;
+}
+
+#searchbar-container {
+    text-align: left;
+}
+
+svg {
+    height: 1.5rem;
+    margin: auto;
+}
+
+.header-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 8fr 4fr;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+
+.header-button-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: rgb(18, 137, 181);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+}
+/* main-content */
+.main-content {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+    gap: 1rem;
+}
+
+.project-tile {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-left: solid 5px gold;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 2px lightgrey;
+    max-height: 100px;
+    overflow: scroll;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.project-description {
+    color: rgb(125, 123, 123)
+}
+
+.main-content-title {
+    padding: 20px 0 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.main-content-container-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    align-items: center;
+    padding-right: 20px;
+}
+
+.announcements > p,
+.trending-container > p {
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+
+.announcement-card {
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 2px lightgrey;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.announcement-subject {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.announcement-subject + p {
+    font-size: 12px;
+    color: rgb(125, 123, 123);
+}
+
+hr {
+    margin: 10px 0 10px 0;
+    color: rgb(125, 123, 123);
+}
+
+.trending-container {
+    align-items: center;
+    padding-right: 20px;
+}
+
+.trending-card {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 2px lightgrey;
+    padding: 20px;
+}
+
+.trending-users {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 8px 0;
+}
+
+.trending-users > p {
+    grid-column: 2 / 3;
+}
+
+.user-tag {
+    font-size: 13px;
+}
+
+.user-name {
+    font-size: 12px;
+    color: rgb(125, 123, 123);
 }
